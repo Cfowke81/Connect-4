@@ -1,5 +1,5 @@
-require 'board'
 require 'colorize'
+require_relative './board'
 
 class Player
   attr_reader :color, :name
@@ -9,5 +9,3 @@ class Player
     @color = color
   end
 end
-
-Player.new("red", "Chris")

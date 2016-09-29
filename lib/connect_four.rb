@@ -18,8 +18,12 @@
 # when a player makes a move Board shares the updated values with Display --->
 # Game runs using the other classes to prompt for the player's turns, displaying
 # the board after a move is made, and determining which player has won
-require_relative 'board'
-require_relative 'player'
+require 'pry'
+require 'colorize'
+require_relative './player'
+require_relative './piece'
+require_relative './board'
+require_relative './board_space'
 
 class Game
   attr_reader :board
